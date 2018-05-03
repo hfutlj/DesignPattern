@@ -1,3 +1,6 @@
+/**
+ * 运算类创建工厂
+ */
 public class OperateFactory {
     public static Operate getOperate(String symbol) throws Exception {
         switch (symbol){
@@ -17,6 +20,7 @@ public class OperateFactory {
     }
 }
 
+// 各运算类
 class AddOperate implements Operate{
     public double getResult(double a, double b) {
         return a+b;
