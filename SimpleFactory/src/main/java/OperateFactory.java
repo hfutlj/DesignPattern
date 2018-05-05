@@ -2,6 +2,12 @@
  * 运算类创建工厂
  */
 public class OperateFactory {
+    /**
+     *  简单工厂在创建产品时将判断分支写在工厂内部，要添加新产品必须修改
+     *  本工厂类
+     * @param symbol 判断条件
+     * @return 具体产品
+     */
     public static Operate getOperate(String symbol) throws Exception {
         switch (symbol){
             case "+":
@@ -14,7 +20,6 @@ public class OperateFactory {
                 return new DivOperate();
             default:
                 throw new Exception("");
-
         }
 
     }
