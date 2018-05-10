@@ -1,7 +1,7 @@
 /**
  * Created by hfutlj  on 2018/5/10.
  * 抽象命令类，持有命令执行者引用
- * 定义命令执行内容病由子类实现
+ * 定义命令执行内容并由子类实现
  */
 public abstract class AbstractOrder {
 
